@@ -2,13 +2,14 @@ var app = angular.module('CodeThat', []);
 
 app.controller('getController', function($scope, $http, getModel) {
     $scope.getRandom = function() {
-        getModel.getDribbbles($scope, $http);
+        getModel.getDribbbles($scope);
     }
 });
 
-app.service('getModel', function() {
-    this.getDribbbles = function($scope, $http) {
-        var random = Math.floor(Math.random()*1000); ;
+app.service('getModel', function($http) {
+    this.getDribbbles = function($scope) {
+        var random = Math.floor(Math.random()*1000);
+        var that = this;
         $http(
             {
                 'method': 'jsonp',
@@ -19,7 +20,9 @@ app.service('getModel', function() {
                 $scope.dribbbleResult = data;
             }
         ).error(
-            // start over until success
+            function() {
+                that.getDribbbles($scope);
+            }
         );
     }
 });

@@ -11,7 +11,7 @@
     <body>
         <div class="page-wrap" ng-controller="getController">
             <h1 class="page-logo">Give Me Something To Code</h1>
-            <button ng-click="getRandom()">Give me something to code</button>
+            <button ng-click="getRandom()">Go!</button>
             
             <h2>{{dribbbleResult.title}}</h2>
             <p>By {{dribbbleResult.player.name}}</p>
