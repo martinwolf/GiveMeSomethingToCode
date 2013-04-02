@@ -1,0 +1,34 @@
+/* CodeThat */
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+/* Basics */
+
+body {
+    padding: 5%;
+    font-size: 100%;
+    background: #f6f5eb;
+}
+
+.page-wrap {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.page-logo {
+    color: #6d6a54;
+    font-family: Georgia, serif;
+    font-size: 5em;
+    line-height: 1.1;
+    text-align: center;
+    text-shadow: 0 2px 0 #fff;
+}
