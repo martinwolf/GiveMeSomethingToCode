@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<html ng-app="CodeThat">
+<html ng-app="GiveMeSomethingToCode">
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Martin Wolf">

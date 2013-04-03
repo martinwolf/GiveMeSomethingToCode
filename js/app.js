@@ -1,4 +1,4 @@
-var app = angular.module('CodeThat', []);
+var app = angular.module('GiveMeSomethingToCode', []);
 
 app.controller('getController', function($scope, $http, getModel) {
     getModel.getDribbbles($scope);
