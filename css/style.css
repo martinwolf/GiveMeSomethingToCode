@@ -13,22 +13,67 @@
 
 /* Basics */
 
+html {
+    height: 100%;
+}
+
 body {
-    padding: 5%;
+    padding: 3em;
+    min-height: 100%;
+    font-family: "jubilat", Helvetica, Arial, sans-serif;
     font-size: 100%;
-    background: #f6f5eb;
+    background: #fdfdf3;
+    border: 1em solid #69D2E7;
 }
 
 .page-wrap {
     margin: 0 auto;
     max-width: 800px;
+    text-align: center;
 }
 
 .page-logo {
-    color: #6d6a54;
-    font-family: Georgia, serif;
+    margin: 0 0 0.7em;
+    color: #FA6900;
     font-size: 5em;
+    font-weight: 700;
     line-height: 1.1;
     text-align: center;
-    text-shadow: 0 2px 0 #fff;
+}
+
+.btn {
+    display: block;
+    width: 310px;
+    margin: 0 auto 3em;
+    padding: 0.8em 0;
+    font-size: 1.4em;
+    line-height: 1;
+    border: 0;
+    border-radius: 1em;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--go {
+    color: #fff;
+    background: #F38630;
+}
+
+.btn--new-pen {
+    color: #fff;
+    background: #A7DBD8;
+    text-decoration: none;
+}
+
+
+/* Item */
+
+.item {
+    display: inline-block;
+    margin: 0 0 5em;
+    padding: 1.7em;
+    background: #fff;
+    border: 0.3em solid #E0E4CC;
 }

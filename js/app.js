@@ -1,6 +1,8 @@
 var app = angular.module('CodeThat', []);
 
 app.controller('getController', function($scope, $http, getModel) {
+    getModel.getDribbbles($scope);
+    
     $scope.getRandom = function() {
         getModel.getDribbbles($scope);
     }
