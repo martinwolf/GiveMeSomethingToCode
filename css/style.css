@@ -1,5 +1,6 @@
 /* GiveMeSomethingToCode */
 
+
 /* Reset */
 
 * {
@@ -9,6 +10,18 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
+
+*::selection {
+    color: #fff;
+    background: #FA6900;
+}
+
+*::-moz-selection {
+    color: #fff;
+    background: #FA6900;
+}
+
+/* END Reset */
 
 
 /* Basics */
@@ -23,7 +36,27 @@ body {
     font-family: "jubilat", Helvetica, Arial, sans-serif;
     font-size: 100%;
     background: #fdfdf3;
-    border: 1em solid #69D2E7;
+    border: 0.8em solid #69D2E7;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 440px) {
+    body {
+        font-size: 70%;
+    }
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .page-wrap {
@@ -34,7 +67,7 @@ body {
 
 .page-logo {
     margin: 0 0 0.7em;
-    color: #FA6900;
+    color: #F38630;
     font-size: 5em;
     font-weight: 700;
     line-height: 1.1;
@@ -46,34 +79,84 @@ body {
     width: 310px;
     margin: 0 auto 3em;
     padding: 0.8em 0;
+    color: #fff;
     font-size: 1.4em;
     line-height: 1;
+    text-decoration: none;
+    background: #69D2E7;
     border: 0;
     border-radius: 1em;
 }
 
+@media (max-width: 440px) {
+    .btn {
+        width: 100%;
+    }
+}
+
 .btn:hover {
+    background: #64cade;
     cursor: pointer;
 }
 
-.btn--go {
-    color: #fff;
-    background: #F38630;
-}
-
-.btn--new-pen {
-    color: #fff;
-    background: #A7DBD8;
-    text-decoration: none;
-}
+/* END  Basics */
 
 
 /* Item */
 
 .item {
+    position: relative;
     display: inline-block;
-    margin: 0 0 5em;
+    margin: 0 0 4.8em;
     padding: 1.7em;
+    max-width: 800px;
     background: #fff;
     border: 0.3em solid #E0E4CC;
 }
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .item {
+        display: block;
+    }
+}
+
+.item-title {
+    margin: 0 0 0.1em;
+    color: #333;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.item-meta {
+    margin: 0 0 1.3em;
+    color: #aaa;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.item-meta a {
+    color: #aaa;
+}
+
+/* END Item */
+
+
+/* Footer */
+
+.page-footer {
+    color: #adb09d;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.page-footer a {
+    color: #adb09d;
+}
+
+/* END Footer */
