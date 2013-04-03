@@ -38,7 +38,6 @@
         </div>
         
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js"></script>
         <script src="js/app.js"></script>
     </body>
 </html>
