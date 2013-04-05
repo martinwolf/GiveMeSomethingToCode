@@ -80,6 +80,12 @@ a:hover {
     text-align: center;
 }
 
+@media (max-width: 440px) {
+    .page-logo {
+        font-size: 4em;
+    }
+}
+
 .btn {
     display: block;
     width: 310px;
