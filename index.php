@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Martin Wolf">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <title>Give Me Something To Code</title>
         
